@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Origano - Fresh Organic Produce</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Origano</h1>
+        <p>Your source for fresh organic produce.</p>
+    </header>
+
+    <main>
+        <h2>Login / Sign Up</h2>
+        <form id="auth-form" action="/auth" method="POST">
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" required>
+            <br>
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+            <br>
+            <button type="submit">Login</button>
+            <p>Don't have an account? <a href="#" onclick="toggleForm()">Sign Up</a></p>
+        </form>
+
+        <form id="signup-form" style="display: none;" action="/signup" method="POST">
+            <label for="new-username">Username:</label>
+            <input type="text" id="new-username" name="username" required>
+            <br>
+            <label for="new-password">Password:</label>
+            <input type="password" id="new-password" name="password" required>
+            <br>
+            <button type="submit">Sign Up</button>
+            <p>Already have an account? <a href="#" onclick="toggleForm()">Login</a></p>
+        </form>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Origano. All Rights Reserved.</p>
+    </footer>
+
+    <script>
+        function toggleForm() {
+            const authForm = document.getElementById('auth-form');
+            const signupForm = document.getElementById('signup-form');
+            if (authForm.style.display === "none") {
+                authForm.style.display = "block";
+                signupForm.style.display = "none";
+            } else {
+                authForm.style.display = "none";
+                signupForm.style.display = "block";
+            }
+        }
+    </script>
+</body>
+</html>
