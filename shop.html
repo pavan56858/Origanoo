@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FreshRoots - Shop</title>
+    <style>
+        /* Basic reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        /* Main styling */
+        body {
+            background-color: #f7f8f3;
+            color: #333;
+        }
+
+        /* Header */
+        header {
+            background-color: #3e8d5e;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 2.5em;
+            margin-bottom: 5px;
+        }
+
+        /* Product Grid */
+        .product-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 20px;
+            padding: 20px;
+        }
+
+        .product-card {
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            text-align: center;
+            padding: 10px;
+        }
+
+        .product-image img {
+            width: 100%;
+            height: auto;
+            border-bottom: 1px solid #ccc;
+        }
+
+        .product-info h3 {
+            font-size: 1.5em;
+            margin: 10px 0;
+        }
+
+        .product-info p {
+            color: #666;
+        }
+
+        .buy-button {
+            background-color: #3e8d5e;
+            color: #fff;
+            border: none;
+            padding: 10px;
+            cursor: pointer;
+            border-radius: 5px;
+            margin-top: 10px;
+            transition: background-color 0.3s;
+        }
+
+        .buy-button:hover {
+            background-color: #345e4b;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #3e8d5e;
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+        }
+
+        footer p {
+            font-size: 0.9em;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <h1>FreshRoots Shop</h1>
+        <p>Organic Fruits and Vegetables</p>
+    </header>
+
+    <!-- Product Grid -->
+    <div class="product-grid">
+        <!-- Fruits -->
+        <div class="product-card">
+            <div class="product-image"><img src="https://images.unsplash.com/photo-1514504383492-54e2d22b76d3?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwzNjUyOXwwfDF8c2VhcmNofDF8fGFwcGxlJTIwZGVsZWdpbnxlbnwwfHx8fDE2ODc1OTg3ODg&ixlib=rb-4.0.3&q=80&w=400" alt="Apple"></div>
+            <div class="product-info"><h3>Apple</h3><p>Fresh organic apples.</p><button class="buy-button">₹150/kg</button></div>
+        </div>
+        <div class="product-card">
+            <div class="product-image"><img src="https://images.unsplash.com/photo-1610349202652-20c1e93ef7e8?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwzNjUyOXwwfDF8c2VhcmNofDEyfHx3YXRlcm1lbGFuJTIwZGVsZWdpbnxlbnwwfHx8fDE2ODc1OTg3ODg&ixlib=rb-4.0.3&q=80&w=400" alt="Watermelon"></div>
+            <div class="product-info"><h3>Watermelon</h3><p>Sweet and juicy watermelons.</p><button class="buy-button">₹50/kg</button></div>
+        </div>
+        <div class="product-card">
+            <div class="product-image"><img src="https://images.unsplash.com/photo-1569577739624-3d7879d02f9e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwzNjUyOXwwfDF8c2VhcmNofDIwfHxmcm9pdHxlbnwwfHx8fDE2ODc1OTg3ODg&ixlib=rb-4.0.3&q=80&w=400" alt="Banana"></div>
+            <div class="product-info"><h3>Banana</h3><p>Fresh organic bananas.</p><button class="buy-button">₹60/kg</button></div>
+        </div>
+        <div class="product-card">
+            <div class="product-image"><img src="https://images.unsplash.com/photo-1610481199784-0b844bd029d2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwzNjUyOXwwfDF8c2VhcmNofDEzfHxmcm9pdHxlbnwwfHx8fDE2ODc1OTg3ODg&ixlib=rb-4.0.3&q=80&w=400" alt="Mango"></div>
+            <div class="product-info"><h3>Mango</h3><p>Sweet ripe mangoes.</p><button class="buy-button">₹100/kg</button></div>
+        </div>
+        <div class="product-card">
+            <div class="product-image"><img src="https://images.unsplash.com/photo-1605296860959-b2bb65d708e6?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwzNjUyOXwwfDF8c2VhcmNofDE5fHxvdHJhbnRpY3xlbnwwfHx8fDE2ODc1OTg3ODg&ixlib=rb-4.0.3&q=80&w=400" alt="Orange"></div>
+            <div class="product-info"><h3>Orange</h3><p>Juicy organic oranges.</p><button class="buy-button">₹80/kg</button></div>
+        </div>
+        <div class="product-card">
+            <div class="product-image"><img src="https://images.unsplash.com/photo-1629625864072-028344f01539?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwzNjUyOXwwfDF8c2VhcmNofDEwfHxmcm9pdHxlbnwwfHx8fDE2ODc1OTg3ODg&ixlib=rb-4.0.3&q=80&w=400" alt="Grapes"></div>
+            <div class="product-info"><h3>Grapes</h3><p>Fresh organic grapes.</p><button class="buy-button">₹150/kg</button></div>
+        </div>
+        <div class="product-card">
+            <div class="product-image"><img src="https://images.unsplash.com/photo-1592022279320-6829c693123c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwzNjUyOXwwfDF8c2VhcmNofDE3fHxmcm9pdHxlbnwwfHx8fDE2ODc1OTg3ODg&ixlib=rb-4.0.3&q=80&w=400" alt="Pineapple"></div>
+            <div class="product-info"><h3>Pineapple</h3><p>Delicious organic pineapples.</p><button class="buy-button">₹90/kg</button></div>
+        </div>
+        <div class="product-card">
+            <div class="product-image"><img src="https://images.unsplash.com/photo-1556199401-d1778e11bba0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwzNjUyOXwwfDF8c2VhcmNofDEwfHxmcm9pdHxlbnwwfHx8fDE2ODc1OTg3ODg&ixlib=rb-4.0.3&q=80&w=400" alt="Peach"></div>
+            <div class="product-info"><h3>Peach</h3><p>Fresh organic peaches.</p><button class="buy-button">₹80/kg</button></div>
+        </div>
+        <div class="product-card">
+            <div class="product-image"><img src="https://images.unsplash.com/photo-1555916326-672e462053d0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwzNjUyOXwwfDF8c2VhcmNofDE4fHxmcm9pdHxlbnwwfHx8fDE2ODc1OTg3ODg&ixlib=rb-4.0.3&q=80&w=400" alt="Strawberry"></div>
+            <div class="product-info"><h3>Strawberry</h3><p>Sweet organic strawberries.</p><button class="buy-button">₹200/kg</button></div>
+        </div>
+        <div class="product-card">
+            <div class="product-image"><img src="https://images.unsplash.com/photo-1513914874904-d2b3a2f5e64f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwzNjUyOXwwfDF8c2VhcmNofDIwMHx8ZmFydGxlcnxlbnwwfHx8fDE2ODc1OTg3ODg&ixlib=rb-4.0.3&q=80&w=400" alt="Cherry"></div>
+            <div class="product-info"><h3>Cherry</h3><p>Fresh organic cherries.</p><button class="buy-button">₹300/kg</button></div>
+        </div>
+        <div class="product-card">
+            <div class="product-image"><img src="https://images.unsplash.com/photo-1562435510-4d6db357e7d7?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwzNjUyOXwwfDF8c2VhcmNofDE3fHxmcm9pdHxlbnwwfHx8fDE2ODc1OTg3ODg&ixlib=rb-4.0.3&q=80&w=400" alt="Blueberry"></div>
+            <div class="product-info"><h3>Blueberry</h3><p>Fresh organic blueberries.</p><button class="buy-button">₹250/kg</button></div>
+        </div>
+
+        <!-- Vegetables -->
+        <div class="product-card">
+            <div class="product-image"><img src="https://images.unsplash.com/photo-1581660814396-f41a295b2d68?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwzNjUyOXwwfDF8c2VhcmNofDEzfHxmcm9pdHxlbnwwfHx8fDE2ODc1OTg3ODg&ixlib=rb-4.0.3&q=80&w=400" alt="Carrot"></div>
+            <div class="product-info"><h3>Carrot</h3><p>Fresh organic carrots.</p><button class="buy-button">₹80/kg</button></div>
+        </div>
+        <div class="product-card">
+            <div class="product-image"><img src="https://images.unsplash.com/photo-1562579404-5bcb3d202d91?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwzNjUyOXwwfDF8c2VhcmNofDI0fHxmb3JtJTIwY29sb3Jpb2RhbCUyMHZlZ2V0YWJsZXxlbnwwfHx8fDE2ODc1OTg3ODg&ixlib=rb-4.0.3&q=80&w=400" alt="Tomato"></div>
+            <div class="product-info"><h3>Tomato</h3><p>Fresh organic tomatoes.</p><button class="buy-button">₹60/kg</button></div>
+        </div>
+        <div class="product-card">
+            <div class="product-image"><img src="https://images.unsplash.com/photo-1589965589737-e5a78f2f8e1a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwzNjUyOXwwfDF8c2VhcmNofDE2fHxmcm9pdHxlbnwwfHx8fDE2ODc1OTg3ODg&ixlib=rb-4.0.3&q=80&w=400" alt="Spinach"></div>
+            <div class="product-info"><h3>Spinach</h3><p>Fresh organic spinach.</p><button class="buy-button">₹70/kg</button></div>
+        </div>
+        <div class="product-card">
+            <div class="product-image"><img src="https://images.unsplash.com/photo-1604608072896-d89e0c45ed3e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwzNjUyOXwwfDF8c2VhcmNofDI4fHxmcm9pdHxlbnwwfHx8fDE2ODc1OTg3ODg&ixlib=rb-4.0.3&q=80&w=400" alt="Cabbage"></div>
+            <div class="product-info"><h3>Cabbage</h3><p>Fresh organic cabbage.</p><button class="buy-button">₹50/kg</button></div>
+        </div>
+        <div class="product-card">
+            <div class="product-image"><img src="https://images.unsplash.com/photo-1572986916205-1c971b69341f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwzNjUyOXwwfDF8c2VhcmNofDJ8fGZpc2guJTIwc2VydmVkd3VpdGhlJTIwc3VtbWFyZXRhbHN8ZW58MHx8fHwxNjg3NTk4Nzg4&ixlib=rb-4.0.3&q=80&w=400" alt="Mushroom"></div>
+            <div class="product-info"><h3>Mushroom</h3><p>Fresh organic mushrooms.</p><button class="buy-button">₹120/kg</button></div>
+        </div>
+        <div class="product-card">
+            <div class="product-image"><img src="https://images.unsplash.com/photo-1604608073533-e8c634ad62b7?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwzNjUyOXwwfDF8c2VhcmNofDEwNXx8Zm9ydW18ZW58MHx8fHwxNjg3NTk4Nzg4&ixlib=rb-4.0.3&q=80&w=400" alt="Onion"></div>
+            <div class="product-info"><h3>Onion</h3><p>Fresh organic onions.</p><button class="buy-button">₹40/kg</button></div>
+        </div>
+        <div class="product-card">
+            <div class="product-image"><img src="https://images.unsplash.com/photo-1604608073393-b35417e9a3ef?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwzNjUyOXwwfDF8c2VhcmNofDExfHx2ZWdldGFibGV8ZW58MHx8fHwxNjg3NTk4Nzg4&ixlib=rb-4.0.3&q=80&w=400" alt="Potato"></div>
+            <div class="product-info"><h3>Potato</h3><p>Fresh organic potatoes.</p><button class="buy-button">₹30/kg</button></div>
+        </div>
+        <div class="product-card">
+            <div class="product-image"><img src="https://images.unsplash.com/photo-1592278273458-8e34ef1f0a83?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwzNjUyOXwwfDF8c2VhcmNofDEyM3x8Zm9ydW18ZW58MHx8fHwxNjg3NTk4Nzg4&ixlib=rb-4.0.3&q=80&w=400" alt="Bell Pepper"></div>
+            <div class="product-info"><h3>Bell Pepper</h3><p>Fresh organic bell peppers.</p><button class="buy-button">₹90/kg</button></div>
+        </div>
+        <div class="product-card">
+            <div class="product-image"><img src="https://images.unsplash.com/photo-1592233434947-5394ca5e9eb9?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwzNjUyOXwwfDF8c2VhcmNofDEyfHxjb25jaGF8ZW58MHx8fHwxNjg3NTk4Nzg4&ixlib=rb-4.0.3&q=80&w=400" alt="Zucchini"></div>
+            <div class="product-info"><h3>Zucchini</h3><p>Fresh organic zucchinis.</p><button class="buy-button">₹120/kg</button></div>
+        </div>
+        <div class="product-card">
+            <div class="product-image"><img src="https://images.unsplash.com/photo-1604608072538-817c1862a44d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwzNjUyOXwwfDF8c2VhcmNofDMwfHxwbGFudGF8ZW58MHx8fHwxNjg3NTk4Nzg4&ixlib=rb-4.0.3&q=80&w=400" alt="Pumpkin"></div>
+            <div class="product-info"><h3>Pumpkin</h3><p>Fresh organic pumpkins.</p><button class="buy-button">₹60/kg</button></div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 FreshRoots. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>
